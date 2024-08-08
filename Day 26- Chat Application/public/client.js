@@ -46,3 +46,9 @@ function appendMessage(msg, type) {
 function scrollToBottom() {
   chatbox.scrollTop = chatbox.scrollHeight;
 }
+
+// Receive messages
+socket.on("message", (msg) => {
+  appendMessage(msg, "incoming");
+  scrollToBottom();
+});

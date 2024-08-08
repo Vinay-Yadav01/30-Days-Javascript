@@ -63,15 +63,20 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 5vh;
+  height: 8%;
   background: #b6cc66;
   color: white;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
+header h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .chat-container {
-  height: 85vh;
+  height: 80%;
   width: 70vw;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -157,7 +162,6 @@ header {
 #chat-form button {
   height: 100%;
   width: 20%;
-  padding: 2px 5px;
   font-size: 1rem;
   border: none;
   outline: none;
@@ -171,37 +175,44 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
   border-radius: 5px;
 }
 
 .meta {
   font-size: 0.8rem;
   font-weight: 600;
+  color: #131606;
+  margin-bottom: 5px;
 }
 
 .text {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   background: #d9e6a7;
   width: 50%;
 }
 
-.incoming{
+.incoming {
   text-align: left;
+  width: 50%;
 }
 
-.outgoing{
-  text-align: right;
-  margin-left: auto;
+.incoming .text {
+  width: fit-content;
 }
 
-.outgoing .text{
-  margin-left: auto;
-  background: #b6cc66;
+.outgoing {
   text-align: right;
+  margin-left: auto;
+  width: 50%;
+}
+
+.outgoing .text {
+  margin-left: auto;
+  background: #919f60;
+  text-align: left;
   color: white;
-  width: 60%;
+  width: fit-content;
 }
